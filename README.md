@@ -1,1 +1,1 @@
-*Добавлены интерфейсы Soundable, Runnable, Flyable, Swimable.  
+-Добавлены интерфейсы Soundable, Runnable, Flyable, Swimable.  
