@@ -9,17 +9,6 @@ public class Animal {
     private Owner owner;
     private Integer legsCount;
 
-    protected void toGo() {
-        System.out.println("I go.");
-    }
-
-    protected void fly() {
-        System.out.println("I fly.");
-    }
-
-    protected void swim() {
-        System.out.println("I swim.");
-    }
 
     public Animal(String name, Integer age, String vaccination, String color,
             String species, Owner owner, Integer legsCount) {

@@ -2,7 +2,7 @@ package ООP.Lesson_1;
 
 import java.util.Arrays;
 
-public class Cat extends Animal{
+public class Cat extends Animal implements Runnable, Soundable, Swimable {
 
     public Cat(String color, String species, Integer legsCount) {
         super(color, species, legsCount);
@@ -28,5 +28,20 @@ public class Cat extends Animal{
         FIndFood(args);
         Eat();
         Sleep();
+    }
+
+    @Override
+    public boolean run() {
+        return true;
+    }
+
+    @Override
+    public boolean makeSound() {
+        return true;
+    }
+
+    @Override
+    public boolean swim() {
+        return true;
     }
 }

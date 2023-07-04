@@ -1,18 +1,24 @@
 package ООP.Lesson_1;
 
-public class Crocodile extends Animal {
+public class Crocodile extends Animal implements Swimable, Runnable, Soundable {
 
     public Crocodile(String color, String species, Integer legsCount) {
         super(color, species, legsCount);
     }
 
+
     @Override
-    protected void swim() {
-        super.swim();
+    public boolean run() {
+        return true;
     }
 
     @Override
-    protected void toGo() {
-        super.toGo();
+    public boolean makeSound() {
+        return true;
+    }
+
+    @Override
+    public boolean swim() {
+        return true;
     }
 }
